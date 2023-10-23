@@ -1,0 +1,241 @@
+:root{
+--cor-amarela:#FED001;
+
+}
+/*Esse root serve para colocar as variaveis do css, a primeira var será para a cor amarela que vou aplicar em mais de uma tag*/
+
+html{
+font-family: 'Inter', sans-serif;
+font-weight: 400;
+/*font: 400 62.5% 'Inter', sans-serif; (forma abreviada)*/
+/*esse valor da font, é para facilitar na hora de usar a unidade de medida REM, que no caso 62.5 quer dizer que 1rem equivale a 10px*/
+
+}
+html,body{
+    max-width: fit-content;
+    max-height: fit-content;
+    width: 100%;
+    height: 100%;
+}
+
+p,a{
+    font-size: 1.6rem; /*equivale a 16px que é o padrão do browser*/
+}
+
+h1{
+font-size: 3.8rem;
+
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+.span{
+    text-transform: uppercase;
+}
+
+.containerback{
+    padding-top: 1px;
+}
+
+.container-dark{
+    background-color: #2a2a2a;
+    color:#fafafa;
+    
+}
+
+.container-light{
+
+    background-color: #fafafa;
+
+}
+
+.container-azul{
+    background-color: #003464;
+    color: #fafafa;
+}
+/*eu criei um container para o header,cor de fundo dos cursos,e o quadrado azul, ai cada um ficou com uma classe */
+
+
+.container{
+margin-left: 100px;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;/*coloca espaço entre os itens*/
+    align-items: center;
+    color:var(--cor-amarela);
+    padding:2rem 0; /*quer dizer 2rem na horizontal e 0 na vertical*/
+}
+
+.nav ul{
+display: flex;
+gap: .6rem; /*espaço*/
+margin-right: 25px;
+list-style: none;
+
+}
+
+
+
+.nav a{
+padding: .75em 1.15em;
+color:inherit;
+border: solid 1px;
+text-decoration: none;
+}
+
+ a:hover{
+    background-color: black;
+}
+
+.nav-fixed{
+position: sticky; /*deixa o elemento fixo mas não altera o fluxo do documento*/
+top: 0;
+left: 0;
+width: 100%;
+
+}
+
+.Banner{
+
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.container-hero{
+background-image: linear-gradient(white, rgb(241, 241, 99));/*faz uma transição gradualmente de uma cor para outra*/
+
+}
+
+.botão{
+    background-color: var(--cor-amarela);
+    border-radius: 4px;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 1.6rem 4rem;
+    color: #2a2a2a;
+}
+.botão:hover{
+    color:white
+}
+
+.banner-titulo{
+    margin-bottom: 5.6rem;
+}
+
+.cursos{
+    text-align: center;
+}
+
+.cursos h2{
+    margin-right: 50px;
+}
+.cursos-opçoes{
+    display: flex;
+    text-align: left;
+}
+
+.cursos_card h3{
+font-size: 2.4rem;
+
+}
+
+.cursos_card p{
+
+ font-size: 1.8rem; 
+ line-height: 1,5;
+font-style: normal;
+    
+}
+
+.cursos_design_conteudo{
+    padding: 1rem 1.5rem;
+}
+
+.cursos_card{
+    border: 1px solid #a8a6a6;
+    border-radius: 10px;
+    margin-right: 50px;
+    gap: 3px;
+    flex: 1; /*ajuda os cards a terem a mesma largura*/
+    margin-bottom: 100px;
+
+}
+
+.cursos_card img{
+    display: block; /*pq a img é um elemento de linha , então coloco isso para transformar em bloco , e conseguir mexer com width,height,etc*/
+width: 100%;
+} 
+
+.section-titulo{
+padding: 3rem 0;
+
+}
+
+.section-botão{
+
+    margin-bottom: 50px;
+    display:inline-block;
+    padding: 1.6rem 4rem;
+    margin-right: 50px; 
+    
+}
+
+
+.escola{
+display: flex;
+gap: 8rem;
+padding: 8rem;
+}
+
+
+.escola-titulo{
+font-size: 3rem;
+
+}
+
+.escola p{
+font-size: 1.8rem;
+line-height: 1.5;
+
+}
+
+.titulo-contatos{
+    text-align: center;
+}
+
+.address{
+    text-align: right;
+font: 400 1.8rem 'Inter', sans-serif;
+padding: 3rem 0;
+}
+
+.contatos{
+
+    margin:auto;
+}
+
+.footer{
+font-size: 1.6rem;
+text-align: center;
+padding: 3.5rem;
+
+}
+
+.footer a{
+    color:inherit
+}
+
+.iframe{
+    display: block;
+    margin:auto;
+}
